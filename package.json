@@ -1,0 +1,19 @@
+{
+  "name": "chk-node-ver",
+  "version": "1.0.0",
+  "description": "check whether current node version meets project demands.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "chk-node-ver": "./index.js"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "semver": "^5.5.0"
+  }
+}
