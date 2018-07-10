@@ -1,6 +1,6 @@
 {
   "name": "chk-node-ver",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "check whether current node version meets project demands.",
   "main": "index.js",
   "scripts": {

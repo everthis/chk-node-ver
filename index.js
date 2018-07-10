@@ -8,6 +8,10 @@ const { log } = console
 const versionReg = /v(.+)/
 const packageJsonPath = path.resolve(__dirname, '..', '..', 'package.json')
 const packageJsonContent = parse(fs.readFileSync(packageJsonPath, 'utf8'))
+if (!(packageJsonContent.engines && packageJsonContent.engines.node)) {
+  log(chalk.red('No node version configured.'))
+  return
+}
 const nodeRange = packageJsonContent.engines.node
 function cExec(cmd) {
   return new Promise(function(resolve, reject) {
